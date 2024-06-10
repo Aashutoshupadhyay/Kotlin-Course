@@ -14,13 +14,19 @@ fun detail(name:String , fName:String , mName:String , address:String) {
          Your Address is $address
      """.trimIndent())
 }
+fun age(){
+    println("Your Age:")
+    var ag = readln().toInt()
+    println("Entered age is $ag")
+}
 fun main() {
     // Calling Simple Function
-    name1()
+//    name1()
     // Calling function with parameter
-    detail(
-        "Ashu","Gopal Upadhyay","Sushila Devi", "Gali No.17 Baprola Vihar"
-    )
+//    detail(
+//        "Ashu","Gopal Upadhyay","Sushila Devi", "Gali No.17 Baprola Vihar"
+//    )
+    age()
 }
 
 

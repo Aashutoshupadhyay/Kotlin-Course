@@ -63,7 +63,7 @@ fun countDigit(num: Int) {
     }
     println("Number of digit is $count")
 }
-
+//olo
 // WAP to take a number from user and reverse them ?
 fun reverse(num: Int) {
     var n1 = num
