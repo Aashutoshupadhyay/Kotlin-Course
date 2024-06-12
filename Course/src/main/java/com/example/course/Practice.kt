@@ -1,5 +1,18 @@
 package com.example.course
-
+// Ques :  write a program to find the maximum and minimum number from the given data ;
+fun maxmin() {
+    println(" Enter the number1 :")
+    val inp1 = readln().toInt()
+    println(" Enter the number2 :")
+    val inp2 = readln().toInt()
+    println(" Enter the number3 :")
+    val inp3 = readln().toInt()
+    println(" You Entered the number is $inp1, $inp2, $inp3}")
+    val maxres = maxOf(inp1, inp2, inp3)
+    val minres = minOf(inp1, inp2, inp3)
+    println("The maximum digit is ${maxres}")
+    println("The minimum digit is ${minres}")
+}
 // Ques-1:  Create a program that show the Grade according to their marks  ?
 // Ans:
 //Using the if else Statement
@@ -85,6 +98,12 @@ fun reverse(num: Int) {
  The factorial of a non-negative integer n is the product of all positive integers less than or equal to n.
  For example, the factorial of 5 is 5 * 4 * 3 * 2 * 1 = 120.*/
 var factorial: Long = 1
+fun calculateFactorial(n: Int): Long {
+    for (i in 1..n) {
+        factorial *= i
+    }
+    return factorial
+}
 fun factRun() {
     println("Enter a non-negative number:")
     val inp = readln().toIntOrNull()
@@ -96,21 +115,14 @@ fun factRun() {
     }
 }
 
-fun calculateFactorial(n: Int): Long {
-    for (i in 1..n) {
-        factorial *= i
-    }
-    return factorial
-}
-
-
 fun main() {
+    maxmin()
 //    gradeCalculator();
 //    gradeCalculator1();
 //    println("Enter a number")
 //    val num:Int = readln().toInt()
 //    countDigit(num)
 //    reverse(num)
-    factRun()
+//    factRun()
 }
 
